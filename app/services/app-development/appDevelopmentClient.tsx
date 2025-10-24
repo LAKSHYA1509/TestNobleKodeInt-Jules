@@ -31,7 +31,7 @@ const caseStudies = [
       { label: "delivery accuracy", value: "98%" },
       { label: "reduction in returns", value: "25%" },
     ],
-    image: "https://res.cloudinary.com/dlrmktbrg/image/upload/v1756188349/IMG_0162-1_jz7dw0.jpg",
+    image: "https://res.cloudinary.com/dwht6936t/image/upload/v1761303500/news7391_mztwjo.jpg",
     buttonText: "Read Case Study",
   },
 ];
