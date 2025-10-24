@@ -1,0 +1,103 @@
+# ===================
+# Sitemap Declarations
+# ===================
+Sitemap: https://noblekode.com/sitemap.xml
+Sitemap: https://noblekode.com/sitemap-0.xml
+
+# ===================
+# General Rules for All Crawlers
+# ===================
+User-agent: *
+Disallow: /thank-you
+Disallow: /_next/
+Disallow: /api/
+Disallow: /404
+Disallow: /500
+Disallow: /admin/
+
+# ===================
+# Specific Bot Restrictions
+# ===================
+
+# Facebook
+User-agent: FacebookBot
+Disallow: /nocrawl
+
+# Known Content Scrapers and Offline Browsers
+User-agent: WebStripper
+User-agent: WebCopier
+User-agent: WebZip
+User-agent: SiteSnagger
+User-agent: Offline Explorer
+User-agent: Teleport
+User-agent: WebAuto
+User-agent: WebVac
+User-agent: WebEnhancer
+User-agent: WebImageCollector
+Disallow: /
+
+# Malicious or Suspicious Bots
+User-agent: EmailCollector
+User-agent: EmailSiphon
+User-agent: CherryPicker
+User-agent: CherryPickerElite/1.0
+User-agent: WebBandit
+User-agent: Copernic
+User-agent: Zeus
+User-agent: Jetbot
+User-agent: Alexibot
+User-agent: BackDoorBot
+User-agent: Xenu's
+User-agent: LinkWalker
+User-agent: RepoMonkey
+User-agent: Microsoft URL Control
+User-agent: Python-urllib
+User-agent: Sootle
+User-agent: GPTBot
+User-agent: BotALot
+User-agent: B2w/0.1
+User-agent: Dumbot
+User-agent: httplib
+User-agent: larbin
+User-agent: EmailWolf
+User-agent: lwp-trivial
+User-agent: True_Robot
+Disallow: /
+
+# Academic, Test, or Misc Bots
+User-agent: Stanford Comp Sci
+User-agent: Stanford
+User-agent: Nutch
+User-agent: InfoNaviRobot
+User-agent: NetMechanic
+User-agent: FairAd Client
+User-agent: TheNomad
+User-agent: Openbot
+Disallow: /
+
+# Archival or Download Tools
+User-agent: Wget
+User-agent: Wget/1.5.3
+User-agent: Wget/1.6
+User-agent: GetRight
+User-agent: WebSauger
+User-agent: WebCopier
+Disallow: /
+
+# Other Identified Crawlers
+User-agent: BecomeBot
+User-agent: LexiBot
+User-agent: NiceRsPRO
+User-agent: Jetbot/1.0
+User-agent: Searchpreview
+User-agent: ProWebWalker
+User-agent: LinkextractorPro
+User-agent: The Intraformant
+User-agent: RMA
+User-agent: NetAnts
+User-agent: QueryN Metasearch
+User-agent: Flaming AttackBot
+User-agent: Telesoft
+User-agent: humanlinks
+User-agent: SpankBot
+Disallow: /
