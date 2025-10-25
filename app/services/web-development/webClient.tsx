@@ -499,8 +499,10 @@ function WebCard({ imageSrc, imageAlt, title, description }: WebCardProps) {
 export function WebCards() {
   return (
     <div className="flex flex-col my-16 gap-8">
-      <h1 className="text-center text-4xl font-bold mb-8 text-white drop-shadow-lg">Web Development Services</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 w-[84rem] mx-auto justify-center">
+      <h1 className="text-center text-4xl font-bold mb-8 text-white drop-shadow-lg px-4">
+        Web Development Services
+      </h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-6 lg:px-8 max-w-[84rem] mx-auto w-full">
         {CARD_DATA.map((card, idx) => (
           <motion.div
             key={idx}
@@ -519,7 +521,9 @@ export function WebCards() {
               className="w-full h-44 object-cover"
             />
             <div className="p-5">
-              <h2 className="text-lg sm:text-xl font-bold text-indigo-100 mb-2">{card.title}</h2>
+              <h2 className="text-lg sm:text-xl font-bold text-indigo-100 mb-2">
+                {card.title}
+              </h2>
               <p className="text-slate-300 text-sm">{card.description}</p>
             </div>
           </motion.div>

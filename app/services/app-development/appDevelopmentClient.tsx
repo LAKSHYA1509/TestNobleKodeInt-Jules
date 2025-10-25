@@ -471,7 +471,7 @@ const CredibilityFactors = () => {
 
 export function GlowingEffectDemo() {
   return (
-    <ul className="mb-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 px-4 sm:px-8 mt-16 sm:mt-24 w-[84rem] justify-center mx-auto">
+    <ul className="mb-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 px-4 sm:px-8 mt-16 sm:mt-24 max-w-[84rem] w-full justify-center mx-auto">
       <GridItem
         icon={<Box className="h-4 w-4 text-black dark:text-neutral-400" />}
         title="End-to-End App Development"
@@ -501,11 +501,13 @@ export function GlowingEffectDemo() {
   );
 }
 
+
 interface GridItemProps {
   icon: React.ReactNode;
   title: string;
   description: React.ReactNode;
 }
+
 
 const GridItem = ({ icon, title, description }: GridItemProps) => {
   return (

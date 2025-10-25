@@ -119,17 +119,10 @@ export function Contact() {
           </a>
         </li>
       </ul>
-    </div>
-  )
-}
-
-export function SocialIcons() {
-  return (
-    <div className="flex flex-col items-center sm:items-start">
-      <h3 className="text-lg font-semibold mb-3 text-secondary">Follow Us</h3>
-      <div className="flex mt-2 flex-wrap justify-center sm:justify-start gap-2">
+    <h3 className="text-lg font-semibold text-secondary mt-4">Follow Us</h3>
+      <div className="flex flex-wrap justify-items-left sm:justify-items-start gap-2">
         {img.map(({ src, alt, link }) => (
-          <div key={src} className="p-2">
+          <div key={src} className="gap-2">
             {link ? (
               <Link href={link} target="" rel="noopener noreferrer">
                 <Image
@@ -149,3 +142,29 @@ export function SocialIcons() {
     </div>
   )
 }
+// export function SocialIcons() {
+//   return (
+//     <div className="flex flex-col items-center sm:items-start">
+//       <h3 className="text-lg font-semibold mb-3 text-secondary">Follow Us</h3>
+//       <div className="flex mt-2 flex-wrap justify-center sm:justify-start gap-2">
+//         {img.map(({ src, alt, link }) => (
+//           <div key={src} className="p-2">
+//             {link ? (
+//               <Link href={link} target="" rel="noopener noreferrer">
+//                 <Image
+//                   src={src || "/placeholder.svg"}
+//                   alt={alt}
+//                   width={32}
+//                   height={32}
+//                   className="w-8 h-8 hover:scale-110 transition-transform"
+//                 />
+//               </Link>
+//             ) : (
+//               <Image src={src || "/placeholder.svg"} alt={alt} width={32} height={32} className="w-8 h-8" />
+//             )}
+//           </div>
+//         ))}
+//       </div>
+//     </div>
+//   )
+// }

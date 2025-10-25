@@ -255,15 +255,15 @@ export default function HomePage() {
                       </div>
                     ))}
                   </div>
-                  <div className="flex justify-end pt-8">
-                    <Button
-                      onClick={handleNext}
-                      disabled={calculatorData.services.length === 0}
-                      className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white px-8 py-4 text-lg font-semibold disabled:opacity-50 disabled:cursor-not-allowed shadow-2xl shadow-cyan-500/25 border-0 transition-all duration-300 hover:shadow-cyan-500/40"
-                    >
-                      Next Step <ChevronRight className="ml-2 h-5 w-5" />
-                    </Button>
-                  </div>
+                  <div className="flex justify-center sm:justify-end pt-8">
+                  <Button
+                    onClick={handleNext}
+                    disabled={calculatorData.services.length === 0}
+                    className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white px-8 py-4 text-lg font-semibold disabled:opacity-50 disabled:cursor-not-allowed shadow-2xl shadow-cyan-500/25 border-0 transition-all duration-300 hover:shadow-cyan-500/40"
+                  >
+                    Next Step <ChevronRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </div>
                 </CardContent>
               </Card>
             </div>
@@ -299,7 +299,7 @@ export default function HomePage() {
                       </div>
                     ))}
                   </div>
-                  <div className="flex justify-between pt-8">
+                  <div className="flex justify-center sm:justify-end pt-8 gap-4">
                     <Button
                       onClick={handlePrevious}
                       variant="outline"
@@ -351,7 +351,7 @@ export default function HomePage() {
                       </div>
                     ))}
                   </div>
-                  <div className="flex justify-between pt-8">
+                  <div className="flex justify-center sm:justify-end pt-8 gap-4 px-8">
                     <Button
                       onClick={handlePrevious}
                       variant="outline"
@@ -361,9 +361,10 @@ export default function HomePage() {
                     </Button>
                     <Button
                       onClick={handleNext}
-                      className="bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white px-8 py-4 text-lg font-semibold shadow-2xl shadow-green-500/25 border-0 transition-all duration-300"
+                      disabled={calculatorData.industry.length === 0}
+                      className="bg-gradient-to-r from-green-500 to-cyan-500 hover:from-green-600 hover:to-cyan-600 text-white px-8 py-4 text-lg font-semibold disabled:opacity-50 disabled:cursor-not-allowed shadow-2xl shadow-purple-500/25 border-0 transition-all duration-300"
                     >
-                      See My Estimate <ChevronRight className="ml-2 h-5 w-5" />
+                      Estimate <ChevronRight className="ml-2 h-5 w-5" />
                     </Button>
                   </div>
                 </CardContent>

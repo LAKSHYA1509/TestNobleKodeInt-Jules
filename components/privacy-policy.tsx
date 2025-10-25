@@ -51,11 +51,11 @@ const handleDownload = async () => {
       <div className="text-white mb-8">
         <Card>
           <CardHeader>
-            <CardTitle className="flex text-white items-center gap-2">
+            <CardTitle className="flex text-gray-100 items-center gap-2">
               <ShieldCheck className="h-5 w-5 text-red-500" />
               Our Commitment to Your Privacy
             </CardTitle>
-            <CardDescription className="text-white">
+            <CardDescription className="text-gray-300">
               At Noble Kode, we value your privacy and are committed to protecting your personal information.
             </CardDescription>
           </CardHeader>
@@ -74,16 +74,31 @@ const handleDownload = async () => {
       </div>
 
       <Tabs defaultValue="collection" className="mb-8">
-        <TabsList className="grid w-full grid-cols-2 md:grid-cols-4">
-          <TabsTrigger value="collection">Data Collection</TabsTrigger>
-          <TabsTrigger value="usage">Data Usage</TabsTrigger>
-          <TabsTrigger value="sharing">Data Sharing</TabsTrigger>
-          <TabsTrigger value="rights">Your Rights</TabsTrigger>
-        </TabsList>
+          <div className="w-full px-2 md:px-0">
+  <TabsList className="flex overflow-x-auto md:grid md:grid-cols-4 gap-2">
+    <TabsTrigger value="collection" className="flex-shrink-0 whitespace-nowrap min-w-fit px-6">
+      Collection
+    </TabsTrigger>
+    <TabsTrigger value="usage" className="flex-shrink-0 whitespace-nowrap min-w-fit px-6">
+      Usage
+    </TabsTrigger>
+    <TabsTrigger value="sharing" className="flex-shrink-0 whitespace-nowrap min-w-fit px-6">
+      Sharing
+    </TabsTrigger>
+    <TabsTrigger value="rights" className="flex-shrink-0 whitespace-nowrap min-w-fit px-6">
+      Rights
+    </TabsTrigger>
+  </TabsList>
+</div>
+
+
+
+
+
         <TabsContent value="collection" className="mt-4">
           <Card>
             <CardHeader>
-              <CardTitle className="flex text-white items-center gap-2">
+              <CardTitle className="flex text-gray-100 items-center gap-2">
                 <FileText className="h-5 w-5 text-cyan-500" />
                 Information We Collect
               </CardTitle>
@@ -167,7 +182,7 @@ const handleDownload = async () => {
         <TabsContent value="usage" className="mt-4">
           <Card>
             <CardHeader>
-              <CardTitle className="flex text-white items-center gap-2">
+              <CardTitle className="flex text-gray-100 items-center gap-2">
                 <Users className="h-5 w-5 text-cyan-500" />
                 How We Use Your Information
               </CardTitle>
@@ -238,7 +253,7 @@ const handleDownload = async () => {
         <TabsContent value="sharing" className="mt-4">
           <Card>
             <CardHeader>
-              <CardTitle className="flex text-white items-center gap-2">
+              <CardTitle className="flex text-gray-100 items-center gap-2">
                 <Shield className="h-5 w-5 text-cyan-500" />
                 How We Share Your Information
               </CardTitle>
@@ -309,7 +324,7 @@ const handleDownload = async () => {
         <TabsContent value="rights" className="mt-4">
           <Card>
             <CardHeader>
-              <CardTitle className="flex text-white items-center gap-2">
+              <CardTitle className="flex text-gray-100 items-center gap-2">
                 <Users className="h-5 w-5 text-cyan-500" />
                 Your Rights and Choices
               </CardTitle>
@@ -406,7 +421,7 @@ const handleDownload = async () => {
       <div className="space-y-6">
         <Card>
           <CardHeader>
-            <CardTitle className="text-white">International Data Transfers</CardTitle>
+            <CardTitle className="text-gray-100">International Data Transfers</CardTitle>
           </CardHeader>
           <CardContent>
             <p>
@@ -431,7 +446,7 @@ const handleDownload = async () => {
 
         <Card>
           <CardHeader>
-            <CardTitle className="text-white">Security of Your Information</CardTitle>
+            <CardTitle className="text-gray-100">Security of Your Information</CardTitle>
           </CardHeader>
           <CardContent>
             <p>
@@ -449,7 +464,7 @@ const handleDownload = async () => {
 
         <Card>
           <CardHeader>
-            <CardTitle className="text-white">Changes to This Privacy Policy</CardTitle>
+            <CardTitle className="text-gray-100">Changes to This Privacy Policy</CardTitle>
           </CardHeader>
           <CardContent>
             <p>
@@ -466,7 +481,7 @@ const handleDownload = async () => {
 
         <Card>
           <CardHeader>
-            <CardTitle className="text-white">Contact Us</CardTitle>
+            <CardTitle className="text-gray-100">Contact Us</CardTitle>
           </CardHeader>
           <CardContent>
             <p>
@@ -475,13 +490,12 @@ const handleDownload = async () => {
             </p>
             <div className="mt-4">
               <p className="font-medium">Noble Kode</p>
-              <p>Email: privacy@noblekode.com</p>
-              <p>Website: noblekode.com</p>
-            </div>
-            <div className="mt-6">
-              <Button variant="outline" className="w-full sm:w-auto" onClick={handleDownload }>
-                Download Privacy Policy
-              </Button>
+              <a href="mailto:contact@noblekode.com">
+              <p>Email: contact@noblekode.com</p>
+              </a>
+              <a href="tel:+919717434098">
+              <p>Contact: +91-9717434098</p>
+              </a>
             </div>
           </CardContent>
         </Card>

@@ -251,7 +251,7 @@ function EmployeeTestimonials() {
       role: "CEO and Founder",
       message:
         "I started my journey at NobleKode with a vision to create a collaborative and innovative work environment.",
-      avatar: "https://res.cloudinary.com/dlrmktbrg/image/upload/v1743681050/TBond/leadership/divansh_dcobu8.jpg",
+      avatar: "https://res.cloudinary.com/dajphu5rf/image/upload/v1759143964/divansh_dcobu8_vxjhjv.jpg",
       emoji: "😉",
     },
     {

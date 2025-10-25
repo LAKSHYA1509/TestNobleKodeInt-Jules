@@ -1,21 +1,22 @@
 import Quicklinks from "./footercompo"
-import { ResourcesFooter, Logo, Contact, SocialIcons } from "./footercompo"
+import { ResourcesFooter, Logo, Contact } from "./footercompo"
 
 export default function Footer() {
   return (
     <footer className="px-6 py-5  bg-gray-50 dark:bg-gray-900">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
-        <div className="flex justify-center sm:justify-start">
-          <Logo />
+      <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-16">
+        <div className="col-span-2 md:col-span-1 mb-6">
+          <Logo/>
         </div>
 
         <Quicklinks />
 
         <ResourcesFooter />
 
-        <Contact />
+        <div className="col-span-2 md:col-span-1">
+          <Contact />
+        </div>
 
-        <SocialIcons />
       </div>
 
       <AllRightReserved />

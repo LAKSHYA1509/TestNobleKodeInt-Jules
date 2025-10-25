@@ -136,15 +136,13 @@ export function MobileMenu({ mobileMenuOpen, setMobileMenuOpen }: any) {
                     <Menu className="h-10 w-10" />
                 </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[320px] p-0">
+            <SheetContent side="right" className="w-[320px] p-0 bg-black">
                 <div className="flex flex-col h-full">
                     {/* Header */}
                     <div className="flex items-center justify-between p-6 border-b border-gray-200">
                         <div className="flex items-center gap-2">
-                            <div className="w-8 h-8 bg-gradient-to-r from-blue-400 to-purple-400 rounded-lg flex items-center justify-center">
-                                <span className="text-white font-bold text-sm">N</span>
-                            </div>
-                            <span className="text-xl font-bold text-gray-900">Noblekode</span>
+                            <img src="/android-chrome-512x512.png" alt="tbondlogo" className="w-10" />
+                            <p className="text-xl text-white">Noble Kode</p>
                         </div>
                     </div>
                     {/* Navigation Content */}
@@ -154,7 +152,7 @@ export function MobileMenu({ mobileMenuOpen, setMobileMenuOpen }: any) {
                             {mobileMenuText.map((item, i) => (
                                 <React.Fragment key={i}>
                                     <div
-                                        className="w-full flex justify-between items-center text-lg font-medium text-gray-900 py-2 cursor-pointer"
+                                        className="w-full flex justify-between items-center text-lg font-medium text-white py-2 cursor-pointer"
                                         onClick={() => {
                                             if (item.subItems.length > 0) {
                                                 toggleSection(item.navName.label);
@@ -182,7 +180,7 @@ export function MobileMenu({ mobileMenuOpen, setMobileMenuOpen }: any) {
                                                 animate={{ height: "auto", opacity: 1 }}
                                                 exit={{ height: 0, opacity: 0 }}
                                                 transition={{ duration: 0.3, ease: "easeInOut" }}
-                                                className="overflow-hidden my-2 pl-3 flex-col flex space-y-3 text-sm text-gray-700"
+                                                className="overflow-hidden my-2 pl-3 flex-col flex space-y-3 text-sm text-white"
                                             >
                                                 {item.subItems.map((sub, idx) => (
                                                     <Link
@@ -202,9 +200,11 @@ export function MobileMenu({ mobileMenuOpen, setMobileMenuOpen }: any) {
                     </div>
                     {/* Footer Actions */}
                     <div className="p-6 border-t border-gray-200 space-y-3">
+                        <Link href="/contact">
                         <Button variant="outline" className="w-full" onClick={() => setMobileMenuOpen(false)}>
                             Get Quote
                         </Button>
+                        </Link>
                     </div>
                 </div>
             </SheetContent>

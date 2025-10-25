@@ -54,12 +54,11 @@ export default function ScrollPopup() {
 
     // Scroll detection
      useEffect(() => {
-        // Temporarily disabled localStorage check for easier testing
-        // const alreadyShown = localStorage.getItem("popupShown")
-        // if (alreadyShown === "true") {
-        //     setHasShown(true)
-        //     return
-        // }
+        const alreadyShown = sessionStorage.getItem("popupShown")
+        if (alreadyShown === "true") {
+            setHasShown(true)
+            return
+        }
 
         const handleScroll = () => {
             const scrollY = window.pageYOffset
@@ -69,7 +68,7 @@ export default function ScrollPopup() {
             if (scrollPercent >= 0.1) {
                 setIsVisible(true)
                 setHasShown(true)
-                // localStorage.setItem("popupShown", "true")
+                sessionStorage.setItem("popupShown", "true")
                 window.removeEventListener("scroll", handleScroll)
             }
         }

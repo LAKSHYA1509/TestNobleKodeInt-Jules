@@ -59,12 +59,12 @@ export default function Home() {
   return (
     <>
       <HomeContent />
-      <div className="bg-white">
-      <CtaButton 
-        ctaText="Ready to grow your business with Noble Kode?"
-        buttonText="Get Started"
-        />
-        </div>
+      <div className="bg-black">
+     <CtaButton
+       ctaText="Ready to grow your business with Noble Kode?"
+       buttonText="Get Started"
+       />
+       </div>
       {/* ---------------- Schema code -- Start ---------------- */}
       
       <Organization />

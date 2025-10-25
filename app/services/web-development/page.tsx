@@ -1,10 +1,10 @@
-
 import WebClient from "./webClient"
 import { Webpage, Breadcrumbs } from "@/components/schemacode"
 
 const title = "Professional Web Design & Development Services India"
-const description = "We design clean, mobile-friendly websites and eCommerce platforms in India. Services also include SEO, app development, and digital marketing support.";
-const canonical = "https://noblekode.com/services/web-development";
+const description =
+  "We design clean, mobile-friendly websites and eCommerce platforms in India. Services also include SEO, app development, and digital marketing support."
+const canonical = "https://noblekode.com/services/web-development"
 
 export const metadata = {
   title: title,
@@ -47,27 +47,31 @@ export const metadata = {
   alternates: {
     canonical: canonical,
   },
-};
+}
 
-export default function WebDevelopment (){
-  return <div>
-    {/* Schema Code */}
-    <Webpage pageName="Web Development" pageUrl={canonical} />
-    <Breadcrumbs breadcrumbs={[
-      {
-        pageName: "Home",
-        pageUrl: "https://noblekode.com/"
-      },
-      {
-        pageName: "Services",
-        pageUrl: "https://noblekode.com/services"
-      },
-      {
-        pageName: "Web Development",
-        pageUrl: canonical
-      }
-    ]} />
+export default function WebDevelopment() {
+  return (
+    <div>
+      {/* Schema Code */}
+      <Webpage pageName="Web Development" pageUrl={canonical} />
+      <Breadcrumbs
+        breadcrumbs={[
+          {
+            pageName: "Home",
+            pageUrl: "https://noblekode.com/",
+          },
+          {
+            pageName: "Services",
+            pageUrl: "https://noblekode.com/services",
+          },
+          {
+            pageName: "Web Development",
+            pageUrl: canonical,
+          },
+        ]}
+      />
 
-    <WebClient/>
-  </div>
+      <WebClient />
+    </div>
+  )
 }
