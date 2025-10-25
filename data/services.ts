@@ -146,7 +146,7 @@ export const webDevelopment = [
       "Conversion-focused Design",
     ],
     icon: Layout,
-    iconColor: "#000000",
+    iconColor: "#48ca82ff",
   },
   {
     title: "PWA (Progressive Web App)",
