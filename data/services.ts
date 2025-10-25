@@ -59,7 +59,7 @@ export const appDevelopment = [
       "UI/UX Optimized for Apple Devices",
     ],
     icon: Apple,
-    iconColor: "#000000", // Black (Apple style)
+    iconColor: "#cc3d04ff", // Black (Apple style)
   },
   {
     title: "Android App",
