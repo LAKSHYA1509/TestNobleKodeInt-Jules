@@ -6,6 +6,7 @@ import Image from "next/image"
 import {
   Play,
   ArrowRight,
+  ArrowDown,
   Users,
   Award,
   Calendar,
@@ -49,7 +50,7 @@ function Banner() {
 
 function Hero() {
   return (
-    <section className="max-w-7xl mx-auto py-20 px-6 lg:px-8">
+    <section className="max-w-7xl mx-auto py-10 px-6 lg:px-8">
       <div className="flex flex-col lg:flex-row items-center gap-16">
         {/* Left - Content */}
         <div className="flex-1 space-y-8">
@@ -78,8 +79,7 @@ function Hero() {
         </div>
 
         {/* Right - Image */}
-        <div className="flex-1 relative">
-          <div className="relative w-full h-[600px] rounded-2xl overflow-hidden shadow-2xl">
+        <div className="relative w-full h-60 sm:h-80 md:h-96 lg:h-[600px] rounded-2xl overflow-hidden shadow-2xl">
             <Image
               src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=1200&q=80"
               alt="AI in teaching"
@@ -94,7 +94,6 @@ function Hero() {
                 {/* Add teaching-related stats here if desired */}
               </div>
             </div>
-          </div>
         </div>
       </div>
     </section>
@@ -127,7 +126,7 @@ function TransformationShowcase() {
   ]
 
   return (
-    <section className="bg-gradient-to-br from-muted to-card py-20">
+    <section className="bg-gradient-to-br from-muted to-card py-10">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-16">
           <span className="inline-block px-4 py-2 bg-primary/10 text-primary text-sm font-medium rounded-full mb-4">
@@ -160,7 +159,8 @@ function TransformationShowcase() {
                 </div>
 
                 <div className="flex justify-center">
-                  <ArrowRight className="h-6 w-6 text-primary" />
+                  <ArrowRight className="h-6 w-6 text-primary hidden md:block" />
+                  <ArrowDown className="h-6 w-6 text-primary md:hidden" />
                 </div>
 
                 <div className="p-4 bg-primary/10 rounded-lg border-l-4 border-primary">
@@ -210,7 +210,7 @@ function StatsSection() {
 
 function OurServices() {
   return (
-    <section className="max-w-7xl mx-auto py-20 px-6 lg:px-8">
+    <section className="max-w-7xl mx-auto py-10 px-6 lg:px-8">
       <div className="text-center mb-16">
         <span className="inline-block px-4 py-2 bg-card text-card-foreground text-sm font-medium rounded-full mb-4">
           AI Services for Teaching
@@ -315,7 +315,7 @@ function TestimonialsSection() {
   ]
 
   return (
-    <section className="bg-muted py-20">
+    <section className="bg-muted py-10">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-16">
           <span className="inline-block px-4 py-2 bg-background text-foreground text-sm font-medium rounded-full mb-4">
@@ -329,7 +329,7 @@ function TestimonialsSection() {
             <div key={index} className="bg-background rounded-2xl p-8 shadow-lg">
               <div className="flex items-center mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5 text-secondary fill-current" />
+                  <Star key={i} className="h-5 w-5 text-secondary fill-yellow-400" />
                 ))}
               </div>
 
@@ -351,7 +351,7 @@ function TestimonialsSection() {
 
 function AIBenefits() {
   return (
-    <section className="max-w-7xl mx-auto py-20 px-6 lg:px-8">
+    <section className="max-w-7xl mx-auto py-10 px-6 lg:px-8">
       <div className="text-center mb-16">
         <span className="inline-block px-4 py-2 bg-card text-card-foreground text-sm font-medium rounded-full mb-4">
           Why AI for Teaching
@@ -453,7 +453,7 @@ function VideoThumbnail() {
 
 function CTASection() {
   return (
-    <section className="bg-primary py-20">
+    <section className="bg-primary py-10">
       <div className="max-w-4xl mx-auto text-center px-6 lg:px-8">
         <h2 className="text-4xl lg:text-5xl font-bold text-primary-foreground mb-6 text-balance">
           Ready to Transform Teaching with AI?

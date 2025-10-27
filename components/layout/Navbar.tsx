@@ -103,9 +103,9 @@ export function MobileMenu({ mobileMenuOpen, setMobileMenuOpen }: any) {
         {
             navName: { label: "About", href: "/about" },
             subItems: [
-                { label: "Company Overview", href: "/about/company" },
+                { label: "Company Overview", href: "/about" },
                 { label: "Our Team", href: "/about" },
-                { label: "Careers", href: "/about/careers" },
+                { label: "Careers", href: "/career" },
             ],
         },
         {
@@ -114,6 +114,8 @@ export function MobileMenu({ mobileMenuOpen, setMobileMenuOpen }: any) {
                 { label: "Healthcare", href: "/case-study/health-care" },
                 { label: "E-commerce", href: "/case-study/e-commerce" },
                 { label: "Blockchain", href: "/industries/blockchain" },
+                { label: "Education", href: "/industries/education" },
+                { label: "Teaching", href: "/industries/teaching" },
             ],
         },
         {

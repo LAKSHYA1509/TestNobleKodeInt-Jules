@@ -52,7 +52,7 @@ function Banner() {
 
 function Hero() {
   return (
-    <section className="max-w-7xl mx-auto py-20 px-6 lg:px-8">
+    <section className="max-w-7xl mx-auto py-10 px-6 lg:px-8">
   <div className="flex flex-col lg:flex-row items-center gap-16">
         {/* Left - Content */}
         <div className="flex-1 space-y-8">
@@ -95,18 +95,6 @@ function Hero() {
               fill
               className="object-cover"
             />
-            <div className="absolute -top-6 -right-6 w-28 h-28 bg-secondary rounded-2xl flex flex-col items-center justify-center shadow-lg">
-              {/* <TrendingUp className="h-8 w-8 text-secondary-foreground mb-1" />
-              <span className="text-xs text-secondary-foreground font-semibold">+150%</span>
-              <span className="text-xs text-secondary-foreground/80">Efficiency</span> */}
-            </div>
-            <div className="absolute -bottom-6 -left-6 w-36 h-36 bg-card rounded-2xl p-4 shadow-lg">
-              <div className="text-center">
-                {/* <Target className="h-8 w-8 text-card-foreground mx-auto mb-2" />
-                <div className="text-2xl font-bold text-card-foreground">98%</div>
-                <div className="text-sm text-muted-foreground">Success Rate</div> */}
-              </div>
-            </div>
         </div>
       </div>
     </section>
@@ -139,7 +127,7 @@ function TransformationShowcase() {
   ]
 
   return (
-    <section className="bg-gradient-to-br from-muted to-card py-20">
+    <section className="bg-gradient-to-br from-muted to-card py-10">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-16">
           <span className="inline-block px-4 py-2 bg-primary/10 text-primary text-sm font-medium rounded-full mb-4">
@@ -224,7 +212,7 @@ function StatsSection() {
 
 function OurServices() {
   return (
-    <section className="max-w-7xl mx-auto py-20 px-6 lg:px-8">
+    <section className="max-w-7xl mx-auto py-10 px-6 lg:px-8">
       <div className="text-center mb-16">
         <span className="inline-block px-4 py-2 bg-card text-card-foreground text-sm font-medium rounded-full mb-4">
           Our Solutions
@@ -338,7 +326,7 @@ function TestimonialsSection() {
   ]
 
   return (
-    <section className="bg-muted py-20">
+    <section className="bg-muted py-10">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-16">
           <span className="inline-block px-4 py-2 bg-background text-foreground text-sm font-medium rounded-full mb-4">
@@ -374,7 +362,7 @@ function TestimonialsSection() {
 
 function DentalBenefits() {
   return (
-    <section className="max-w-7xl mx-auto py-20 px-6 lg:px-8">
+    <section className="max-w-7xl mx-auto py-10 px-6 lg:px-8">
       <div className="text-center mb-16">
         <span className="inline-block px-4 py-2 bg-card text-card-foreground text-sm font-medium rounded-full mb-4">
           Why Partner With Us
@@ -480,7 +468,7 @@ function VideoThumbnail() {
 
 function CTASection() {
   return (
-    <section className="bg-primary py-20">
+    <section className="bg-primary py-10">
       <div className="max-w-4xl mx-auto text-center px-6 lg:px-8">
         <h2 className="text-4xl lg:text-5xl font-bold text-primary-foreground mb-6 text-balance">
           Ready to Transform Your Healthcare Organization?

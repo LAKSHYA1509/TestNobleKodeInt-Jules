@@ -52,7 +52,7 @@ function Banner() {
 
 function Hero() {
   return (
-    <section className="max-w-7xl mx-auto py-20 px-6 lg:px-8">
+    <section className="max-w-7xl mx-auto py-10 px-6 lg:px-8">
       <div className="flex flex-col lg:flex-row items-center gap-16">
         {/* Left - Content */}
         <div className="flex-1 space-y-8">
@@ -128,14 +128,14 @@ function TransformationShowcase() {
   ]
 
   return (
-    <section className="bg-gradient-to-br from-muted to-card py-20">
+    <section className="bg-gradient-to-br from-muted to-card py-10">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-16">
           <span className="inline-block px-4 py-2 bg-primary/10 text-primary text-sm font-medium rounded-full mb-4">
             E-commerce Impact
           </span>
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">
-            Real-World E-commerce Transformation
+            Real-World <br />E-commerce Transformation
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
             See how technology is revolutionizing online retail, delivering convenience, automation, and growth for e-commerce businesses.
@@ -212,13 +212,13 @@ function StatsSection() {
 
 function OurServices() {
   return (
-    <section className="max-w-7xl mx-auto py-20 px-6 lg:px-8">
+    <section className="max-w-7xl mx-auto py-10 px-6 lg:px-8">
       <div className="text-center mb-16">
         <span className="inline-block px-4 py-2 bg-card text-card-foreground text-sm font-medium rounded-full mb-4">
           Our E-commerce Solutions
         </span>
         <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">
-          End-to-End E-commerce Services
+          End-to-End <br />E-commerce Services
         </h2>
         <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
           From custom online store development to seamless payment integration, we deliver secure, scalable, and innovative solutions for your e-commerce business.
@@ -317,7 +317,7 @@ function TestimonialsSection() {
   ]
 
   return (
-    <section className="bg-muted py-20">
+    <section className="bg-muted py-10">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-16">
           <span className="inline-block px-4 py-2 bg-background text-foreground text-sm font-medium rounded-full mb-4">
@@ -353,7 +353,7 @@ function TestimonialsSection() {
 
 function EcommerceBenefits() {
   return (
-    <section className="max-w-7xl mx-auto py-20 px-6 lg:px-8">
+    <section className="max-w-7xl mx-auto py-10 px-6 lg:px-8">
       <div className="text-center mb-16">
         <span className="inline-block px-4 py-2 bg-card text-card-foreground text-sm font-medium rounded-full mb-4">
           Why Choose Us
@@ -458,7 +458,7 @@ function VideoThumbnail() {
 
 function CTASection() {
   return (
-    <section className="bg-primary py-20">
+    <section className="bg-primary py-10">
       <div className="max-w-4xl mx-auto text-center px-6 lg:px-8">
         <h2 className="text-4xl lg:text-5xl font-bold text-primary-foreground mb-6 text-balance">
           Ready to Transform Your E-commerce Business?

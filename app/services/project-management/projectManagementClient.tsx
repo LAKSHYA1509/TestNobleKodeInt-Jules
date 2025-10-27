@@ -45,7 +45,7 @@ export default function projectManagement() {
                 alt="Industry Responsibility"
                 width={600}
                 height={500}
-                className="object-cover w-full h-[500px] transform group-hover:scale-105 transition-transform duration-500"
+                className="object-contain w-full h-[300px] transform group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent"></div>
             </div>
@@ -90,7 +90,7 @@ export default function projectManagement() {
                 alt="Clarity in Industry"
                 width={600}
                 height={500}
-                className="object-cover w-full h-[500px] transform group-hover:scale-105 transition-transform duration-500"
+                className="object-contain w-full h-[300px] transform group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent"></div>
             </div>

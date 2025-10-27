@@ -74,8 +74,8 @@ export default function HomeContent() {
       <IndustriesSection />
       {/* <IndustriesSection /> */}
       {/* <PortfolioSection /> */}
-      <div className="hidden sm:block">
-      <TestimonialsSection  />
+      <div className= " hidden sm:block" >
+     <TestimonialsSection  />
       </div>
       <BlogSection />
     {/* <CarouselDemo/> */}

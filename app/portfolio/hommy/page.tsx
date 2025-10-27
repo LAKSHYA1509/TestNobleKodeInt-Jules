@@ -84,7 +84,7 @@ function Top() {
         <h1 className="text-foreground font-bold text-4xl md:text-5xl lg:text-6xl leading-tight mb-6">
          Design • Products • Execution All in One Place
 
-          <span className="text-primary block mt-2">Hommy</span>
+          <span className="text-green-500 block mt-2">Hommy</span>
         </h1>
 
         <p className="text-muted-foreground text-lg md:text-xl mb-8 max-w-2xl mx-auto">
