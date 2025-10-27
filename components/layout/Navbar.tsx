@@ -138,7 +138,7 @@ export function MobileMenu({ mobileMenuOpen, setMobileMenuOpen }: any) {
             <SheetContent side="right" className="w-[320px] p-0 bg-black">
                 <div className="flex flex-col h-full">
                     {/* Header */}
-                    <div className="flex items-center justify-between p-6 border-b border-gray-200">
+                    <div className="flex items-center justify-between p-6 border-b">
                         <div className="flex items-center gap-2">
                             <img src="/android-chrome-512x512.png" alt="tbondlogo" className="w-10" />
                             <p className="text-xl text-white">Noble Kode</p>

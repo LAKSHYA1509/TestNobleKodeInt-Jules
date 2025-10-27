@@ -6,6 +6,7 @@ import Image from "next/image"
 import {
   Play,
   ArrowRight,
+  ArrowDown,
   Users,
   Award,
   Calendar,
@@ -160,7 +161,8 @@ function TransformationShowcase() {
                 </div>
 
                 <div className="flex justify-center">
-                  <ArrowRight className="h-6 w-6 text-primary" />
+                  <ArrowRight className="h-6 w-6 text-primary hidden md:block" />
+                  <ArrowDown className="h-6 w-6 text-primary md:hidden" />
                 </div>
 
                 <div className="p-4 bg-primary/10 rounded-lg border-l-4 border-primary">
@@ -329,7 +331,7 @@ function TestimonialsSection() {
             <div key={index} className="bg-background rounded-2xl p-8 shadow-lg">
               <div className="flex items-center mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5 text-secondary fill-current" />
+                  <Star key={i} className="h-5 w-5 text-secondary fill-yellow-400" />
                 ))}
               </div>
 

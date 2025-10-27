@@ -59,14 +59,6 @@ export function ThreeDCardDemo() {
   }
     , {
 
-    h2: "Business Card Design",
-    description: 'Let’s make a business card that leaves a great first impression! We’ll design a sleek, personalized card with your details, adding a touch of your personality to every handshake. It’s all about making connections that last.',
-    img: "https://res.cloudinary.com/dwht6936t/image/upload/v1759562221/WF-1723500_Header-1176x540-1_uyxe3q_pojd13.webp",
-    x: -20,
-    z: 10
-  }
-    , {
-
     h2: "Poster Making",
     description: 'Want to grab attention? We’ll create a poster that pops—vibrant, fun, and tailored to your event or message. Think of it as your loudest cheerleader, designed to draw eyes and spark interest wherever it goes.',
     img: "https://res.cloudinary.com/dwht6936t/image/upload/v1759562218/Flyer-Maker-Poster-Maker_gnr6jv_ajype3.jpg",
