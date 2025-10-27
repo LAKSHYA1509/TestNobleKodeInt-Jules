@@ -74,7 +74,7 @@ function Hero() {
               href="/industry"
               className="inline-flex items-center justify-center px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-primary/90 transition-colors"
             >
-              View More Case Studies
+              View More Cases
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
           </div>
