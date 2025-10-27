@@ -578,10 +578,10 @@ export default function HomePage() {
 
                   <div className="mt-6 text-center text-slate-300/80">
                     <p>
-                      Need immediate assistance? Call us at <span className="text-cyan-400">+91-9717434098</span>
+                      Need immediate assistance? Call us at <span className="text-cyan-400"><a href="tel:+919717434098">+91-9717434098</a></span>
                     </p>
                     <p>
-                      or drop an email at <span className="text-cyan-400">noblekode@gmail.com</span>
+                      or drop an email at <span className="text-cyan-400"><a href="mailto:noblekode@gmail.com">noblekode@gmail.com</a></span>
                     </p>
                   </div>
                 </CardContent>

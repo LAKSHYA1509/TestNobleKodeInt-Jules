@@ -42,13 +42,13 @@ export default function BlogPost({ params }: BlogPageProps) {
 
         {/* Blog Header */}
         <header className="mb-8">
-          <div className="relative w-full  h-[500px] sm:h-[300px] md:h-[800px] mb-8 rounded-lg overflow-hidden">
+          <div className="relative w-full h-60 sm:h-60 md:h-80 mb-8 rounded-lg overflow-hidden">
             {post.image && post.image.includes('cloudinary.com') ? (
               <CldImage
                 src={post.image}
                 alt={post.title}
                 fill
-                className="object-contain h-fit"
+                className="object-contain"
                 priority
               />
             ) : (
@@ -56,7 +56,7 @@ export default function BlogPost({ params }: BlogPageProps) {
                 src={post.image || "/placeholder.svg"}
                 alt={post.title}
                 fill
-                className="object-contain h-fit"
+                className="object-contain"
                 priority
               />
             )}
@@ -70,6 +70,7 @@ export default function BlogPost({ params }: BlogPageProps) {
             <span>{post.readTime}</span>
           </div>
         </header>
+
 
         {/* Blog Content */}
         <div className="prose prose-sm sm:prose lg:prose-lg dark:prose-invert max-w-none ">

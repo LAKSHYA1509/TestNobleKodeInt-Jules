@@ -80,8 +80,7 @@ function Hero() {
         </div>
 
         {/* Right - Image */}
-        <div className="flex-1 relative">
-          <div className="relative w-full h-[600px] rounded-2xl overflow-hidden shadow-2xl">
+        <div className="relative w-full h-60 sm:h-80 md:h-96 lg:h-[600px] rounded-2xl overflow-hidden shadow-2xl">
             <Image
               src="https://res.cloudinary.com/dwht6936t/image/upload/v1759562182/The_Impact_of_Digital_Transformation_on_the_Retail_Industry_osfcvv.jpg"
               alt="E-commerce transformation"
@@ -96,7 +95,6 @@ function Hero() {
                 {/* Add e-commerce-related stats here if desired */}
               </div>
             </div>
-          </div>
         </div>
       </div>
     </section>

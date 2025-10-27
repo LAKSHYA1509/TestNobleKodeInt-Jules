@@ -37,6 +37,7 @@ import { FaChartLine, FaUserTie, FaClipboardCheck, FaSearch, FaChartBar, FaTshir
 
 // import {SoftwareCostEstimator} from "../app-development/appDevelopmentClient"
 import { Span } from "next/dist/trace";
+import { BannerBeams } from "@/components/Banner/Bann";
 type WebCardProps = {
     imageSrc: string;
     imageAlt: string;
@@ -87,7 +88,7 @@ export default function WebClient() {
     return (
         <>
             {/* Banner */}
-            <Banner />
+            <BannerBeams headingh2="Web Development" span="Services"/>
             <BentoGridThirdDemo />
             <WebCards />
             <WebsiteProcess />
@@ -102,27 +103,6 @@ export default function WebClient() {
     )
 }
 
-function Banner() {
-    return <React.Fragment>
-        <section className="relative w-full h-[50vh] md:h-[80vh] flex items-center text-white">
-            <CldImage
-                src="https://res.cloudinary.com/dlrmktbrg/image/upload/v1745926518/web-development_vqboam.webp"
-                alt="Web Development"
-                fill
-                className="object-cover h-full w-full"
-            />
-            <div className="relative z-10 px-4 md:px-6 max-w-3xl">
-                <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold leading-snug md:leading-[3.4rem]">
-                    Web Development Services
-                </h1>
-                <p className="text-sm sm:text-base md:text-lg lg:text-xl mt-4 opacity-90">
-                    Responsive, custom-built websites tailored to your business goals.
-                </p>
-            </div>
-        </section>
-
-    </React.Fragment>
-}
 
 
 function BentoGridThirdDemo() {
@@ -454,7 +434,7 @@ function BentoGridThirdDemo() {
 
 
     return (
-        <BentoGrid className="max-w-7xl mx-auto md:auto-rows-[20rem]">
+        <BentoGrid className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-6 sm:px-10 lg:px-14 max-w-[84rem] mx-auto w-full">
             {items.map((item, i) => (
                 <BentoGridItem
                     key={i}
@@ -502,7 +482,7 @@ export function WebCards() {
       <h1 className="text-center text-4xl font-bold mb-8 text-white drop-shadow-lg px-4">
         Web Development Services
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-6 lg:px-8 max-w-[84rem] mx-auto w-full">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-6 sm:px-10 lg:px-14 max-w-[84rem] mx-auto w-full">
         {CARD_DATA.map((card, idx) => (
           <motion.div
             key={idx}

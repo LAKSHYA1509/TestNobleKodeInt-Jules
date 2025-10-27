@@ -1,3 +1,4 @@
+
 "use client"
 
 import { useState } from "react"
@@ -86,8 +87,7 @@ function Hero() {
         </div>
 
         {/* Right - Image */}
-        <div className="flex-1 relative">
-          <div className="relative w-full h-[600px] rounded-2xl overflow-hidden shadow-2xl">
+        <div className="relative w-full h-60 sm:h-80 md:h-96 lg:h-[600px] rounded-2xl overflow-hidden shadow-2xl">
             <Image
               src="https://res.cloudinary.com/dwht6936t/image/upload/v1759562159/10-Ways-Blockchain-is-Transforming-Industries-Beyond-Cryptocurrency_grhtpj_lhpwsy.jpg"
               alt="Blockchain transformation"
@@ -102,7 +102,6 @@ function Hero() {
                 {/* Add blockchain-related stats here if desired */}
               </div>
             </div>
-          </div>
         </div>
       </div>
     </section>

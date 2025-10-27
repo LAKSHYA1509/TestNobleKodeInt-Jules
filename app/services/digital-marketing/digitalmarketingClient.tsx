@@ -4,7 +4,7 @@ import { useState } from "react";
 import { BannerBeams } from "@/components/Banner/Bann";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import { FaGoogle, FaMailchimp, FaWordpressSimple } from "react-icons/fa";
-import { SiSemrush, SiGoogleads } from "react-icons/si";
+import { SiSemrush, SiGoogleads, SiMeta } from "react-icons/si";
 import { FaChartLine, FaUserTie, FaClipboardCheck, FaSearch, FaChartBar, FaTshirt, FaTools, FaTooth, FaGraduationCap } from "react-icons/fa";
 import { TestmonySlider } from "@/components/testimony";
 
@@ -77,7 +77,7 @@ export function ThreeDCardDemo() {
   return (
     <div>
       <h3 className='text-3xl text-center my-5 font-semibold'>Our Digital Marketing Services</h3>
-      <div className="flex flex-wrap gap-x-10 my-5 justify-center">
+      <div className="flex flex-wrap gap-x-10 my-5 ml-4 mr-4 justify-center">
         {
           threeDItems.map((items) => (
             <CardContainer className="inter-var" key={items.id}>
@@ -118,7 +118,9 @@ export function ThreeDCardDemo() {
                     as="button"
                     className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
                   >
+                  <a href="/contact" target="_blank" rel="noopener noreferrer">
                     {items.signBtn}
+                  </a>
                   </CardItem>
                 </div>
               </CardBody>
@@ -184,7 +186,7 @@ function HowWorkSection() {
       <p className="text-center text-gray-700 dark:text-gray-300 mb-8">
         Our structured approach ensures your business receives tailored, results-driven digital marketing solutions at every stage.
       </p>
-      <ol className="relative border-l border-gray-200 dark:border-gray-700">
+      <ol className="relative border-l ml-5 border-gray-200 dark:border-gray-700">
         <li className="mb-10 ml-6">
           <span className="absolute flex items-center justify-center w-8 h-8 bg-blue-100 rounded-full -left-4 ring-4 ring-white dark:ring-gray-900 dark:bg-blue-900">
             <span className="text-blue-600 font-bold">1</span>
@@ -346,13 +348,26 @@ function ToolsTechnologiesSection() {
       description: "Comprehensive SEO tool for keyword research and competitor analysis."
     },
     {
+      name: "Meta Ads",
+      icon: <SiMeta className="text-blue-400" size={28}/>,
+      description:"Comprehensive Tool for Meta Ads for a very wide User Base under network."
+    },
+    {
       name: "Ahrefs",
-      icon: <span className="text-[#1A73E8] font-bold text-lg">A</span>,
+      icon: (
+        <span className="bg-[#1A73E8] text-white font-bold text-lg rounded-full w-7 h-7 flex items-center justify-center">
+          A
+        </span>
+      ),
       description: "SEO toolset for backlink analysis and site audits."
     },
     {
       name: "Moz",
-      icon: <span className="text-[#2D8CFF] font-bold text-lg">M</span>,
+      icon: (
+        <span className="bg-[#2D8CFF] text-white font-bold text-lg rounded-full w-7 h-7 flex items-center justify-center">
+          M
+        </span>
+      ),
       description: "SEO software for site audits, rank tracking, and keyword research."
     },
     {
@@ -368,30 +383,32 @@ function ToolsTechnologiesSection() {
   ];
 
   return (
-    <section className="max-w-7xl mx-auto my-16 ">
-      <h2 className="text-3xl font-bold text-center mb-6">Our Tools & Technologies</h2>
-      <div className="flex flex-wrap justify-center gap-10">
+    <section className="max-w-7xl mx-auto my-16 px-4">
+      <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+        Our Tools & Technologies
+      </h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {tools.map((tool) => (
-          <span
+          <div
             key={tool.name}
-            className="flex flex-col items-center gap-2 bg-gray-100 dark:bg-gray-700 px-4 py-2 rounded shadow hover:scale-105 transition-transform max-w-xl w-55 h-55"
+            className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow hover:shadow-lg transition-all p-6 flex flex-col items-center h-full"
           >
-            <div className="flex items-center gap-2">
-            {/* Circle Rounded text Issue */}
-              <span className="bg-black flex justify-center items-center rounded-full w-12 h-12 " >
-
+            <div className="mb-4 flex items-center justify-center">
+              <span className="bg-gray-100 dark:bg-gray-700 rounded-full w-14 h-14 flex items-center justify-center text-2xl shadow">
                 {tool.icon}
               </span>
-
-              <span className="font-medium">{tool.name}</span>
             </div>
-            <span className="text-xs text-gray-600 dark:text-gray-300 text-center">{tool.description}</span>
-          </span>
+            <div className="text-center">
+              <div className="font-semibold text-lg mb-2 text-gray-800 dark:text-gray-100">{tool.name}</div>
+              <div className="text-xs sm:text-sm text-gray-600 dark:text-gray-300">{tool.description}</div>
+            </div>
+          </div>
         ))}
       </div>
     </section>
   );
 }
+
 
 function IndustriesSection() {
   const industries = [

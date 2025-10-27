@@ -138,11 +138,11 @@ export function FeaturesSectionDemo() {
   {
     title: "Centralized Collaboration",
     description:
-      "Bring your team together in one platform for seamless communication and document sharing.",
+      "All team together in one platform for seamless communication and document sharing.",
     icon: <IconCloud />,
   },
   {
-    title: "Real-Time Progress Updates",
+    title: "Real-Time Updates",
     description:
       "Monitor project status with live updates and intuitive dashboards, reducing delays by up to 30%.",
     icon: <IconTerminal2 />,
@@ -179,7 +179,7 @@ export function FeaturesSectionDemo() {
   },
 ];
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  relative z-10 py-10 max-w-7xl mx-auto">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  relative z-10 py-10 max-w-7xl mx-auto sm:items-center sm:px-4">
       {features.map((feature, index) => (
         <Feature key={feature.title} {...feature} index={index} />
       ))}
@@ -201,7 +201,7 @@ const Feature = ({
   return (
     <div
       className={cn(
-        "flex flex-col lg:border-r  py-10 relative group/feature dark:border-neutral-800",
+        "flex flex-col items-center sm:items-start py-10 relative group/feature dark:border-neutral-800",
         (index === 0 || index === 4) && "lg:border-l dark:border-neutral-800",
         index < 4 && "lg:border-b dark:border-neutral-800"
       )}

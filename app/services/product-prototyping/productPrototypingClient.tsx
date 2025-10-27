@@ -64,7 +64,7 @@ const Process =[{
       {/* Hero Section */}
       <div className="bg-white dark:bg-gray-900 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-transparent dark:from-gray-800 dark:via-gray-900 pointer-events-none" />
-        <BannerBeams headingh2="From Ideas to 3D" span="Product Prototyping Services" />
+        <BannerBeams headingh2="Product Prototyping" span="Services" />
         <section className="max-w-5xl mx-auto px-4 py-12 relative z-10 flex flex-col md:flex-row items-center gap-10">
           <div className="flex-1">
             <h1 className="text-4xl font-extrabold mb-4 text-center md:text-left tracking-tight">

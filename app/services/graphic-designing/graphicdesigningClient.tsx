@@ -77,9 +77,9 @@ export function ThreeDCardDemo() {
 
   return (
     <div className="mt-5" >
-      <h2 className='text-center text-5xl font-semibold' >Services </h2>
+      <h2 className='text-center text-4xl sm:text-4xl font-semibold' >Services </h2>  
 
-      <div className='flex justify-around flex-wrap my-5 gap-2 '>
+      <div  className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-6 sm:px-10 lg:px-14 max-w-[84rem] mx-auto w-full">
 
 
         {Array.isArray(items) && items.map((item) => {
@@ -133,7 +133,7 @@ export function ThreeDCardDemo() {
 export function MeetOurDesigner() {
   return <React.Fragment>
     <div className='bg-blue-900 py-20' >
-      <h3 className='italic text-3xl text-center text-white'>
+      <h3 className='italic text-3xl text-center text-white mr-4 ml-4'>
         Design is not just what it looks like and feels like. Design is how it works. - Steve Jobs
       </h3>
 

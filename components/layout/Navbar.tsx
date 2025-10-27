@@ -24,7 +24,7 @@ export function Navbar() {
     return (
         <header className="sticky top-0 z-50 bg-black backdrop-blur-sm p-5  ">
             <div className="container mx-auto px-4">
-                <div className="flex items-center justify-between h-16">
+                <div className="flex items-center justify-between h-10">
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-2">
 
@@ -94,7 +94,6 @@ export function MobileMenu({ mobileMenuOpen, setMobileMenuOpen }: any) {
             subItems: [
                 { label: "Web Development", href: "/services/web-development" },
                 { label: "Mobile Apps", href: "/services/app-development" },
-                { label: "UI/UX Design", href: "/services/uiux" },
                 { label: "Graphic Designing", href: "/services/graphic-designing" },
                 { label: "Digital Marketing", href: "/services/digital-marketing" },
                 { label: "Project Management", href: "/services/project-management" },
@@ -114,7 +113,7 @@ export function MobileMenu({ mobileMenuOpen, setMobileMenuOpen }: any) {
             subItems: [
                 { label: "Healthcare", href: "/case-study/health-care" },
                 { label: "E-commerce", href: "/case-study/e-commerce" },
-                { label: "Education", href: "/industries/education" },
+                { label: "Blockchain", href: "/industries/blockchain" },
             ],
         },
         {

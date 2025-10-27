@@ -98,7 +98,7 @@ const cardsCompo = [
 export default function AppDevelopmentClient() {
   return (
     <>
-      <BannerBeams headingh2="Mobile App Development" span="Company" />
+      <BannerBeams headingh2= "App Development" span="Services" />
       <IndustrySlider />
       <ThreeDCardDemo />
       <StatsWithCTA />
@@ -192,18 +192,18 @@ function IndustrySlider() {
 
   return (
     <div className="flex flex-col lg:flex-row bg-black text-white py-10 px-4 sm:px-6 lg:px-20">
-      <div className="lg:w-1/2 mb-8 lg:mb-0 ml-36 space-y-6">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight max-w-[34rem]">
-          Proven Capabilities to Build<br />Diverse Industry-Based Software
-        </h2>
-        <p className="text-sm sm:text-base lg:text-lg text-gray-300 max-w-[34rem] text-justify">
-          As an industry leader in software application development services, our dedicated team works
-          around the clock to build custom technology solutions tailored to your industry and business
-          needs. We focus on delivering high-quality, scalable, and secure applications that drive
-          efficiency and innovation. Our expertise spans various industries, ensuring that we can meet
-          the unique challenges and requirements of your sector.
-        </p>
-      </div>
+      <div className="lg:w-1/2 mb-8 lg:mb-0 lg:ml-36 mx-auto space-y-6 text-center lg:text-left">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight max-w-[34rem] mx-auto lg:mx-0">
+            Proven Capabilities to Build<br />Diverse Industry-Based Software</h2>
+          <p className="text-sm sm:text-base lg:text-lg text-gray-300 max-w-[34rem] mx-auto lg:mx-0 text-center lg:text-justify">
+            As an industry leader in software application development services, our dedicated team works
+            around the clock to build custom technology solutions tailored to your industry and business
+            needs. We focus on delivering high-quality, scalable, and secure applications that drive
+            efficiency and innovation. Our expertise spans various industries, ensuring that we can meet
+            the unique challenges and requirements of your sector.
+          </p>
+        </div>
+
       <div className="lg:w-1/2 space-y-4 max-w-[34rem] max-h-[20rem] sm:max-h-[25rem] overflow-y-auto">
         {industries.map((item, index) => (
           <div key={index} className="bg-[#111] border border-gray-700 rounded-md overflow-hidden">

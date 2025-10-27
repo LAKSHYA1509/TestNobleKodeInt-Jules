@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image"
+import { title } from "process"
 
 interface MainCompoProps {
   bgImg: string
@@ -59,19 +60,22 @@ export function ImageSec() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {[
             {
-              src: "https://res.cloudinary.com/dajphu5rf/image/upload/v1759144082/WhatsApp_Image_2025-04-03_at_5.05.40_PM_ptbick_lmgmq6.jpg",
-              alt: "Professional tile installation",
-              title: "Professional Installation",
+              src: "https://res.cloudinary.com/dajphu5rf/image/upload/v1759143916/Stepping_into_JIET_Hospital_feels_like_walking_into_a_Ghibli_world_where_healing_is_gentle_ca_uwxwe6_pdzorv.webp",
+              alt: "Professional Installation",
+              title: "TBond in Hospitals",
+              description: "Healthcare facility constructed with premium T-Bond materials, ensuring durability and excellence in every aspect.",
             },
             {
-              src: "https://res.cloudinary.com/dajphu5rf/image/upload/v1759144081/WhatsApp_Image_2025-04-03_at_5.05.40_PM_2_le49di_htvlez.jpg",
-              alt: "Modern bathroom tiles",
-              title: "Residential Projects",
+              src: "https://res.cloudinary.com/dajphu5rf/image/upload/v1759144076/If_our_school_existed_in_a_Ghibli_universe_Soft_skies_quiet_corners_and_stories_waiting_to_unf_v4njvb_kfdohf.jpg",
+              alt: "Residential Projects",
+              title: "TBond in Schools",
+              description: "Educational institution built with premium T-Bond materials, providing a safe environment for students.",
             },
             {
-              src: "https://res.cloudinary.com/dajphu5rf/image/upload/v1759144081/WhatsApp_Image_2025-04-03_at_5.05.40_PM_1_rv6el5_r9daj1.jpg",
-              alt: "Commercial tiling project",
-              title: "Commercial Spaces",
+              src: "https://res.cloudinary.com/dajphu5rf/image/upload/v1759144083/Construction_ghibli_art_civilengineeringsimple_Thankyou_Hayao_Miyazaki_ghibli_studioghibli_coyvhu_qkz5qy.jpg",
+              alt: "Commercial Spaces",
+              title: "TBond in Construction",
+              description: "Partner with T-Bond for premium construction materials, expert technical support, and comprehensive solutions.",
             },
           ].map((image, index) => (
             <div
@@ -91,7 +95,7 @@ export function ImageSec() {
                 <h3 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
                   {image.title}
                 </h3>
-                <p className="text-muted-foreground mt-2">Quality results with Tbond adhesive solutions</p>
+                <p className="text-muted-foreground mt-2">{image.description}</p>
               </div>
             </div>
           ))}
