@@ -512,9 +512,11 @@ export function IndustriesSection() {
         </div>
 
         <div className="text-center mt-12 lg:hidden">
+          <a href="/industry">
           <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg">
             Explore More In Industries
           </Button>
+           </a>
         </div>
       </div>
     </section>

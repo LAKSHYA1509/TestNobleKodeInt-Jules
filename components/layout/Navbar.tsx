@@ -113,9 +113,9 @@ export function MobileMenu({ mobileMenuOpen, setMobileMenuOpen }: any) {
             subItems: [
                 { label: "Healthcare", href: "/case-study/health-care" },
                 { label: "E-commerce", href: "/case-study/e-commerce" },
-                { label: "Blockchain", href: "/industries/blockchain" },
-                { label: "Education", href: "/industries/education" },
-                { label: "Teaching", href: "/industries/teaching" },
+                { label: "Blockchain", href: "/case-study/blockchain" },
+                { label: "Education", href: "/case-study/education" },
+                { label: "Teaching", href: "/case-study/teaching" },
             ],
         },
         {
